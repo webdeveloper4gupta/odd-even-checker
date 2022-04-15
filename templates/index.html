@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            <h1 align="center">Odd even checker</h1>
+             {{ forms.as_p }}
+            <input type="submit" value="check"><br>
+     <br>
+         answer:{{result}}
+         
+        </form>
+    </body>
+</html>
